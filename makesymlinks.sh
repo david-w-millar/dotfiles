@@ -8,7 +8,7 @@ display_status () { echo "::::: $1 :::::"; }
 # locations
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="tmux.conf"
+files="tmux.conf tmux"
 
 # backup
 display_status "Backing up old configs" 
