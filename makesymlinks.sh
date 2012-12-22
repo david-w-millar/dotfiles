@@ -15,7 +15,7 @@ display_status "Backing up old configs"
 mkdir -p $olddir
 for file in $files; do
    echo "  ~/.$file -> $olddir"
-   cp ~/.$file $olddir
+   mv ~/.$file $olddir
 done
 
 # symlink
