@@ -10,12 +10,6 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 files="tmux.conf tmux Xdefaults"
 
-
-# Xdefaults - solarized dark
-cat $dir/Xdefaults-millar > $dir/Xdefaults
-cat $dir/xresources/solarized >> $dir/Xdefaults
-
-
 # backup
 display_status "Backing up old configs" 
 mkdir -p $olddir
