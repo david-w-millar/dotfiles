@@ -1,0 +1,4 @@
+XTerm*faceName: Inconsolata
+XTerm*faceSize: 8
+Rxvt*scrollBar: False
+Rxvt*font: xft:Inconsolata-8
