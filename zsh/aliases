@@ -1,0 +1,35 @@
+### Aliases
+# First off, allow commands after sudo to still be alias expanded.
+# An alias ending in a space allows the next word on the command line to
+# be alias expanded as well.
+alias sudo="sudo "
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -l'
+alias ls='ls -l --color=auto -B'
+alias grep='grep --color=auto'
+alias pu='pushd'
+alias po='popd'
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cd/='cd /'
+alias vi='vim'
+
+alias -g L='|less'
+alias -g T='|tail'
+alias -g H='|head'
+alias -g V='|vim -'
+alias -g B='&>/dev/null &'
+alias -g D='&>/dev/null &|'
+
+
+
+### Arch
+alias pacu='sudo packer -Syu --noedit --noconfirm'
+alias paci='sudo packer -S --noedit --noconfirm'
+alias pacs='packer -Ss'
+alias pacr='sudo pacman -R'
+
+
+### Misc
+alias cpb='rsync -rv $1 $2 --progress'
