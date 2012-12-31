@@ -50,11 +50,11 @@ export DIRSTACKSIZE=10                    # Max number of dirs on the dir stack
 
 export HISTSIZE=5500                      # Lines of history to save in mem
 export SAVEHIST=5000                      # Lines of history to write out
-export HISTFILE="$ZSH/.zsh_history"       # File to which history will be saved
+export HISTFILE="~/.zsh_history"       # File to which history will be saved
 export HOST=${HOST:-$HOSTNAME}            # Ensure that $HOST contains hostname
 export PAGER='less'
 export EDITOR='vim'
-export LANG='en-US.UTF-8'
+#export LANG='en-US.UTF-8'
 
 ### Prompt for spelling corrections.
 # %R is word to change, %r is suggestion, and Y and N are colored green and red.
