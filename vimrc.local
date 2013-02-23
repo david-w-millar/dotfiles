@@ -98,7 +98,8 @@ nnoremap <silent> <A-;> <C-w><S-w>
 
 """""""""" Plugins """"""""""
 " NERD Tree
-map <F2> :NERDTreeToggle<CR>
+"map <F2> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=0
 
 " VimWiki
 " set vimwiki default directories
