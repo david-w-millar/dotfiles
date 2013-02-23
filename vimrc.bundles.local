@@ -2,5 +2,6 @@
 Bundle 'ShowMarks'
 Bundle 'vimwiki'
 Bundle 'darkBlue'
-
-
+Bundle 'vim-ruby/vim-ruby'
+""Bundle 'grails-vim'
+""Bundle 'vim-scripts/bufexplorer'
