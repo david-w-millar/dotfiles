@@ -24,7 +24,7 @@ tmux -2 new-session -d -s $SESSION
 # Add windows
 # Window 0 - vimwiki | htop
 tmux set-window-option -t $SESSION -g automatic-rename off
-tmux setw
+#tmux setw
 
 
 

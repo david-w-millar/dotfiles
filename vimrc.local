@@ -105,10 +105,13 @@ let NERDTreeQuitOnOpen=0
 " set vimwiki default directories
 let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'},
                     \ {'path': '~/Dropbox/wikis/tech'}]
-
 au FileType vimwiki map <buffer><c-h> :VimwikiGoBackLink<CR>
 " No camel case wikiwords
 let g:vimwiki_camel_case=0
+
+" Numbers
+nnoremap <F3> :NumbersToggle<CR>
+
 
 " Slimux
 "map <Leader>s :SlimuxREPLSendLine<CR>

@@ -21,6 +21,7 @@ alias -g H='|head'
 alias -g V='|vim -'
 alias -g B='&>/dev/null &'
 alias -g D='&>/dev/null &|'
+alias -g E=' 2>&1 | tee lastcommand.log'
 
 
 

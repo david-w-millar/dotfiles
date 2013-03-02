@@ -8,7 +8,7 @@ display_status () { echo "::::: $1 :::::"; }
 # locations
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="tmux.conf tmux Xdefaults zshrc zsh cdmrc vimrc.local vimrc.bundles.local vim gitconfig"
+files="tmux.conf tmux conkyrc xinitrc Xdefaults zshrc zsh xmodmaprc cdmrc vimrc.local vimrc.bundles.local vim gitconfig"
 
 # backup
 display_status "Backing up old configs" 
@@ -24,7 +24,6 @@ for file in $files; do
   echo "  ~/.$file <- $dir/$file"
   ln -s $dir/$file ~/.$file
 done
-
 
 # spf13 (vim)
 #curl http://j.mp/spf13-vim3 -L -o - | sh
