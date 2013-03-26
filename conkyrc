@@ -36,4 +36,4 @@ out_to_console yes
 if_up_strictness address
 
 TEXT
-Net: ${if_up eth0}[${addr eth0}] Wired${else}${if_up wlan0}[${addr wlan0}] ${wireless_essid wlan0}(${wireless_link_qual_perc wlan0}%)${else}None${endif}${endif} | Bat: $battery_short | Vol: ${if_mixer_mute}Mute${else}$mixer%$endif | ${time %a %b %-e, %Y %-l:%M%p}
+Net: ${if_up eth0}[${addr eth0}] Wired${else}${if_up wlan0}[${addr wlan0}] ${wireless_essid wlan0}(${wireless_link_qual_perc wlan0}%)${else}None${endif}${endif} | Bat: $battery_short | Vol: ${if_mixer_mute}Mute${else}$mixer%$endif | ${time %a %b %-e, %Y %-l:%M%p} | Temp: ${hwmon temp 1}°C

@@ -38,7 +38,7 @@ filetype plugin indent on
 " Tab and Indent
 set tabstop=2
 set shiftwidth=2
-set softtabstop=3
+"set softtabstop=3
 set expandtab
 set smartindent
 set autoindent

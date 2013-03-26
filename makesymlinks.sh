@@ -8,7 +8,7 @@ display_status () { echo "::::: $1 :::::"; }
 # locations
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="tmux.conf tmux conkyrc ackrc xinitrc Xdefaults zshrc zsh xmodmaprc cdmrc vimrc.local vimrc.bundles.local vim gitconfig"
+files="tmux.conf tmux conkyrc ackrc xinitrc Xdefaults zshrc zsh xmodmaprc cdmrc vimrc.local vimrc.bundles.local vim gitconfig muttrc"
 
 # backup
 display_status "Backing up old configs" 
@@ -28,5 +28,7 @@ done
 # spf13 (vim)
 #curl http://j.mp/spf13-vim3 -L -o - | sh
 
+# mutt dirs
+#mkdir -p ~/.mutt/cache/headers mkdir ~/.mutt/cache/bodies touch ~/.mutt/certificates
 
 
