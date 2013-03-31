@@ -48,3 +48,6 @@ export PATH=/home/dave/.rvm/gems/ruby-1.9.3-p327/bin:/home/dave/.rvm/gems/ruby-1
 # system specific config
 [[ -f ~/.localrc ]] && . ~/.localrc
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/dave/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/home/dave/.gvm/bin/gvm-init.sh"
