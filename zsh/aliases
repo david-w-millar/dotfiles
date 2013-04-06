@@ -32,4 +32,5 @@ alias pacr='sudo pacman -R'
 ### Misc
 alias cpb='rsync -rv $1 $2 --progress'
 alias npr='mplayer -playlist http://207.245.67.209/91FM.m3u'
+alias kittehs='chromium http://www.fortlangley.com/kittens'
 
