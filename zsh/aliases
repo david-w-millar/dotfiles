@@ -23,14 +23,13 @@ alias -g B='&>/dev/null &'
 alias -g D='&>/dev/null &|'
 alias -g E=' 2>&1 | tee lastcommand.log'
 
-
-
 ### Arch
 alias pacu='sudo packer -Syu --noedit --noconfirm'
 alias paci='sudo packer -S --noedit --noconfirm'
 alias pacs='packer -Ss'
 alias pacr='sudo pacman -R'
 
-
 ### Misc
 alias cpb='rsync -rv $1 $2 --progress'
+alias npr='mplayer -playlist http://207.245.67.209/91FM.m3u'
+
