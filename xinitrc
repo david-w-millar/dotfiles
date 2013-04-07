@@ -27,5 +27,6 @@ _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_AWT_WM_NONREPARENTING
 (conky | while read -r; do xsetroot -name "$REPLY"; done) &
 #trayer --SetDockType true --distance 5 --padding 10 --transparent true --alpha 240 --edge bottom --align right --expand false --widthtype request --heighttype pixel --height 10&
+#/usr/lib/notification-daemon-1.0/notification-daemon
 exec ck-launch-session dwm
 
