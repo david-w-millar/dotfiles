@@ -6,17 +6,15 @@
 includeTargets << grailsScript("_GrailsBootstrap")
 includeTargets << grailsScript("_GrailsDocs")
 
-buildDirName = 'target'
+setDefaultTarget("packageDocs")
 
-target(default: "Packages grails docs into an archive"){
-  depends(docs,checkVersion)
+target(packageDocs: "Packages grails docs into an archive"){
+  depends(docs)
+  String buildDirName = new File("$basedir/target").name
+  String fileName = new File(buildDirName, grailsAppName).name
+  String date = new SimpleDateFormat("yyyyMMdd").format(new Date())
+  String zipName = "$buildDirName/${fileName}-docs-${grailsAppVersion}-${date}.zip"
 
-  String fileName = new File(basedir, buildDirName).name
-  String date = new SimpleDateFormat("ddMMyyy").format(new Date())
-  String zipName = "$basedir/${fileName}-docs-${date}.zip"
-
-  //def ignore = "[Start] Packaging Docs"?.grom()
+  grailsConsole.updateStatus "Creating documentation archive: ${zipName}"
   ant.zip(destfile: zipName, basedir: "$basedir/${buildDirName}", includes: "docs/**")
-  //ignore = "[End] Packaging Docs"?.grom()
-
 }
