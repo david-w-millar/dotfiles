@@ -8,7 +8,7 @@ display_status () { echo "::::: $1 :::::"; }
 # locations
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="tmux.conf tmux conkyrc ackrc xinitrc Xdefaults zshrc zsh xmodmaprc cdmrc vimrc.local vimrc.bundles.local vim gitconfig muttrc gemrc"
+files="tmux.conf tmux conkyrc ackrc xinitrc Xdefaults zshrc zsh xmodmaprc cdmrc vimrc.local vimrc.bundles.local vim gitconfig muttrc gemrc vimsauce"
 
 # backup
 display_status "Backing up old configs" 

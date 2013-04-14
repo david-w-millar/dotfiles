@@ -1,7 +1,8 @@
 " Bundles not included in spf13
-Bundle 'ShowMarks'
 Bundle 'vimwiki'
-Bundle 'darkBlue'
 Bundle 'vim-ruby/vim-ruby'
-""Bundle 'grails-vim'
-""Bundle 'vim-scripts/bufexplorer'
+Bundle 'joonty/vim-sauce.git'
+"Bundle 'ShowMarks'
+"Bundle 'darkBlue'
+"Bundle 'grails-vim'
+"Bundle 'vim-scripts/bufexplorer'
