@@ -29,8 +29,15 @@ alias paci='sudo packer -S --noedit --noconfirm'
 alias pacs='packer -Ss'
 alias pacr='sudo pacman -R'
 
+### Vagrant
+alias vagdebug='export VAGRANT_LOG=debug'
+alias vaginfo='export VAGRANT_LOG=info'
+
 ### Misc
 alias cpb='rsync -rv $1 $2 --progress'
 alias npr='mplayer -playlist http://207.245.67.209/91FM.m3u'
 alias kittehs='chromium http://www.fortlangley.com/kittens'
+
+
+
 
