@@ -28,6 +28,8 @@ alias pacu='sudo packer -Syu --noedit --noconfirm'
 alias paci='sudo packer -S --noedit --noconfirm'
 alias pacs='packer -Ss'
 alias pacr='sudo pacman -R'
+alias journaltail='sudo journalctl -x --full -f'
+
 
 ### Vagrant
 alias vagdebug='export VAGRANT_LOG=debug'

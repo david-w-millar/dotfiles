@@ -28,7 +28,7 @@ done
 ### One-Offs
 display_status "Creating Grails scripts symlink link"
 mkdir -p ~/.grails
-ln -s $dir/grails/scripts ~/.grails/scripts
+ln -s $dir/grails/scripts ~/grails/scripts
 
 # spf13 (vim)
 #curl http://j.mp/spf13-vim3 -L -o - | sh
