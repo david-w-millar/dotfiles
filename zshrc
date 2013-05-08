@@ -34,12 +34,14 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # # git-flow
-plugins=(git rails ruby gem github mysql vagrant archlinux gradle grails python redis-cli rvm ssh-agent vundle)
+#plugins=(git rails ruby gem github mysql vagrant archlinux gradle grails python redis-cli rvm ssh-agent vundle)
+#plugins=(git-flow git ruby gem vagrant gradle grails python rvm ssh-agent vundle)
+plugins=(tmux git-flow git-extras git ruby gem bundler vagrant gradle grails python rvm ssh-agent vundle capistrano colored-man cp jira)
 
 source $ZSH/oh-my-zsh.sh
 
 # Millar
-export PATH=/home/dave/.rvm/gems/ruby-1.9.3-p327/bin:/home/dave/.rvm/gems/ruby-1.9.3-p327@global/bin:/home/dave/.rvm/rubies/ruby-1.9.3-p327/bin:/home/dave/.rvm/bin:/home/dave/bin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/gant/bin:/usr/share/java/gradle/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/qt/bin:/home/dave/apps/idea-IU-117.798/bin
+export JAVA_HOME=/usr/lib/j2sdk1.7-ibm
 
 # Source configs
 . ~/.zsh/config
@@ -47,4 +49,13 @@ export PATH=/home/dave/.rvm/gems/ruby-1.9.3-p327/bin:/home/dave/.rvm/gems/ruby-1
 
 # system specific config
 [[ -f ~/.localrc ]] && . ~/.localrc
+export JAVA_HOME=/usr/lib/jvm/java-7-sunjdk/
+export PATH=$JAVA_HOME/bin:$PATH
 
+### oh-my-zsh tmux plugin config
+export ZSH_TMUX_AUTOSTART=true
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/dmillar/.gvm/bin/gvm-init.sh" ]] && source "/home/dmillar/.gvm/bin/gvm-init.sh"
+source "/home/dmillar/.gvm/bin/gvm-init.sh"

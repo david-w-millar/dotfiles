@@ -3,17 +3,17 @@
 # An alias ending in a space allows the next word on the command line to
 # be alias expanded as well.
 alias sudo="sudo "
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -l'
-alias ls='ls -l --color=auto -B'
-alias grep='grep --color=auto'
-alias pu='pushd'
-alias po='popd'
-alias ..='cd ..'
-alias cd..='cd ..'
-alias cd/='cd /'
-alias vi='vim'
+#alias l='ls -CF --color=auto'
+#alias la='ls -A --color=auto'
+#alias ll='ls -lhF --color=auto'
+#alias ls='ls -l --color=auto -B'
+#alias grep='grep --color=auto'
+#alias pu='pushd'
+#alias po='popd'
+#alias ..='cd ..'
+#alias cd..='cd ..'
+#alias cd/='cd /'
+#alias vi='vim'
 
 alias -g L='|less'
 alias -g T='|tail'
@@ -21,15 +21,31 @@ alias -g H='|head'
 alias -g V='|vim -'
 alias -g B='&>/dev/null &'
 alias -g D='&>/dev/null &|'
+alias -g LC='|tee lastcommand.log'
 
+### Tmux
+#alias tmux="TERM=screen-256color-bce tmux -2"
+#alias tmux="tmux -2"
 
+### System Debugging
+alias logtail='tail -f /var/log/dmesg'
 
 ### Arch
-alias pacu='sudo packer -Syu --noedit --noconfirm'
-alias paci='sudo packer -S --noedit --noconfirm'
-alias pacs='packer -Ss'
-alias pacr='sudo pacman -R'
-
+#alias pacu='sudo packer -Syu --noedit --noconfirm'
+#alias paci='sudo packer -S --noedit --noconfirm'
+#alias pacs='packer -Ss'
+#alias pacr='sudo pacman -R'
 
 ### Misc
-alias cpb='rsync -rv $1 $2 --progress'
+alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
+alias ack='ack-grep'
+
+### Misc Programming
+alias ws="cd ~/workspaces"
+
+### Network stuff
+alias servedir="python -m SimpleHTTPServer"
+
+### Grails Testing Wierdness
+function grailsTestOrder() { grep testsuite target/test-reports/TESTS-TestSuites.xml | grep -v testsuites | cut -d\  -f8-9 | sed -E 's/name="(.*)" package="(.*)"/\2.\1/' | grep .  }
+alias testorder=grailsTestOrder

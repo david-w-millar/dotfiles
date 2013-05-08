@@ -1,8 +1,8 @@
 [user]
-	email = david.w.millar@gmail.com
-	name = David W Millar
+  email = david.w.millar@gmail.com
+  name = David W Millar
 [core]
-	editor = vim
-	autocrlf = input
+  editor = vim
+  autocrlf = input
 [color]
-	ui = true
+  ui = true

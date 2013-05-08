@@ -1,5 +1,7 @@
 " Bundles not included in spf13
-Bundle 'ShowMarks'
+"Bundle 'ShowMarks'
 Bundle 'vimwiki'
+"Bundle 'vimux'
+"Bundle 'vim-powerline'
 
 
