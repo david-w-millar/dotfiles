@@ -25,11 +25,18 @@ for file in $files; do
   ln -s $dir/$file ~/.$file
 done
 
+### One-Offs
+display_status "Creating Grails scripts symlink link"
+mkdir -p ~/.grails
+ln -s $dir/grails/scripts ~/grails/scripts
+
 # spf13 (vim)
 # curl http://j.mp/spf13-vim3 -L -o - | sh
 
 # gvm
 # curl -s get.gvmtool.net | bash
+# mutt dirs
+#mkdir -p ~/.mutt/cache/headers mkdir ~/.mutt/cache/bodies touch ~/.mutt/certificates
 
 # oh-my-zsh
 # curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh

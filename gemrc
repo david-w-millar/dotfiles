@@ -1,0 +1,8 @@
+---
+:gem: --local --gen-rdoc --run-tests
+:rdoc: --linline-source --line-numbers
+:sources:
+ - https://rubygems.org
+:gempath:
+ - /usr/lib/ruby/gems
+ - /home/dave/.rubygems

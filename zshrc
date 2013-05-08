@@ -52,6 +52,7 @@ export JAVA_HOME=/usr/lib/j2sdk1.7-ibm
 export JAVA_HOME=/usr/lib/jvm/java-7-sunjdk/
 export PATH=$JAVA_HOME/bin:$PATH
 
+<<<<<<< HEAD
 ### oh-my-zsh tmux plugin config
 export ZSH_TMUX_AUTOSTART=true
 
@@ -59,3 +60,10 @@ export ZSH_TMUX_AUTOSTART=true
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/home/dmillar/.gvm/bin/gvm-init.sh" ]] && source "/home/dmillar/.gvm/bin/gvm-init.sh"
 source "/home/dmillar/.gvm/bin/gvm-init.sh"
+=======
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/dave/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/home/dave/.gvm/bin/gvm-init.sh"
+>>>>>>> 697f56d1334e40eeab47d649fdb6c3b9545dc323

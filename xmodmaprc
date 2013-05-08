@@ -1,0 +1,6 @@
+! Swap caps lock and escape
+remove Lock = Caps_Lock
+! This seems to wreck vimium in chromium... or something
+! keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+add Lock = Caps_Lock
