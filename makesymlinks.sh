@@ -6,7 +6,8 @@
 display_status () { echo "::::: $1 :::::"; }
 
 # locations
-dir=~/dotfiles
+dir=$PWD
+
 olddir=~/dotfiles_old
 files="tmux.conf Xdefaults zshrc zsh cdmrc vimrc.local vimrc.bundles.local gitconfig"
 
@@ -29,6 +30,9 @@ done
 display_status "Creating Grails scripts symlink link"
 mkdir -p ~/.grails
 ln -s $dir/grails/scripts ~/grails/scripts
+
+### Misc
+mkdir ~/.ssh
 
 # spf13 (vim)
 # curl http://j.mp/spf13-vim3 -L -o - | sh

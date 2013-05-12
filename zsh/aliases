@@ -21,7 +21,6 @@ alias -g H='|head'
 alias -g V='|vim -'
 alias -g B='&>/dev/null &'
 alias -g D='&>/dev/null &|'
-<<<<<<< HEAD
 alias -g LC='|tee lastcommand.log'
 
 ### Tmux
@@ -36,7 +35,6 @@ alias logtail='tail -f /var/log/dmesg'
 #alias paci='sudo packer -S --noedit --noconfirm'
 #alias pacs='packer -Ss'
 #alias pacr='sudo pacman -R'
-=======
 alias -g E=' 2>&1 | tee lastcommand.log'
 
 ### Arch
@@ -51,7 +49,6 @@ alias vagdebug='export VAGRANT_LOG=debug'
 alias vaginfo='export VAGRANT_LOG=info'
 
 ### Misc
-<<<<<<< HEAD
 alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
 alias ack='ack-grep'
 
