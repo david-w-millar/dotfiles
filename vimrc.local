@@ -105,13 +105,8 @@ set expandtab
 """""""""" Plugins """"""""""
 " VimWiki
 " set vimwiki default directories
-let g:vimwiki_list = [{'path': '~/vimwikis/kenexa'}]
-let NERDTreeQuitOnOpen=0
-
-" VimWiki
-" set vimwiki default directories
-"let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'},
-"                    \ {'path': '~/Dropbox/wikis/tech'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'},
+                    \ {'path': '~/Dropbox/wikis/tech'}]
 " No camel case wikiwords
 let g:vimwiki_camel_case=0
 

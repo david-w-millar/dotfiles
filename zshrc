@@ -36,12 +36,14 @@ COMPLETION_WAITING_DOTS="true"
 # # git-flow
 #plugins=(git rails ruby gem github mysql vagrant archlinux gradle grails python redis-cli rvm ssh-agent vundle)
 #plugins=(git-flow git ruby gem vagrant gradle grails python rvm ssh-agent vundle)
-plugins=(tmux git-flow git-extras git ruby gem bundler vagrant gradle grails python rvm ssh-agent vundle capistrano colored-man cp jira)
+plugins=(tmux tmuxinator git-flow git-extras git ruby gem bundler vagrant gradle grails python rvm ssh-agent vundle capistrano colored-man cp gnu-utils heroku)
 
 source $ZSH/oh-my-zsh.sh
 
 # Millar
-export JAVA_HOME=/usr/lib/j2sdk1.7-ibm
+
+# Misc
+set -o vi
 
 # Source configs
 . ~/.zsh/config
@@ -49,13 +51,15 @@ export JAVA_HOME=/usr/lib/j2sdk1.7-ibm
 
 # system specific config
 [[ -f ~/.localrc ]] && . ~/.localrc
-export JAVA_HOME=/usr/lib/jvm/java-7-sunjdk/
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_21
+export IDEA_JDK=/usr/lib/jvm/jdk1.7.0_21
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$HOME/.jenv/bin:$PATH"
 
 ### oh-my-zsh tmux plugin config
 #export ZSH_TMUX_AUTOSTART=true
 zstyle ':omz:module:tmux' auto-start 'yes'
-
+if [ "$TMUX" = "" ]; then tmux -2; fi
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
