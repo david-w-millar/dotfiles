@@ -1,5 +1,5 @@
 /*
- * Verifies that grails scripts are symlinked correctly
+ * Creates an archive of project docs
  */
  import java.text.SimpleDateFormat
 

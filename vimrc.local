@@ -2,129 +2,47 @@
 " David Millar
 " .vimrc.local
 "
-"colorscheme darkblue
 
 " Map Leader
-""let mapleader = ","
-
-"set nocompatible
-""set ruler         " Display current position in lower right corner
-"set laststatus=2
-"set showmode
-"set scrolloff=3   " 2 lines above/below cursor when scrolling
-"set number        " Display line numbers
-"set showcmd       " Show command in bottom right of screen
-"syntax enable     " Enable syntax highlighting if possible
-"set foldenable    " enable code folding
-"set nowrap        " Line wrapping pisses me off
-"set nobackup      " No backup files
-"set showmatch     " Show matching bracket
-"set wildmenu      " completion with menu
-"set title         " show file in titlebar
-"set mouse=v       " use mouse in visual mode (not normal, insert, command, etc)
-"set pastetoggle=F11 " Toggle paste mode
-
-
-" Search
-"set incsearch     " Incremental Search
-"set ignorecase    " ignore case in search by default
-"set smartcase     " But becomre case sensitive on capital letter
-"set hlsearch      " Highlight search results
-"set magic         " change the way backslashes are used in search patterns
-
-" Enable filetypes
-"filetype plugin indent on
+"let mapleader = ","
+set scrolloff=3   " 2 lines above/below cursor when scrolling
 
 " Tab and Indent
 set tabstop=2
 set shiftwidth=2
-"set softtabstop=3
+set softtabstop=2
 set expandtab
 set smartindent
 set autoindent
 
-" Persistence between 
-"set viminfo='20,\"500 " remember copy registers after quitting in the viminfo file
-"set hidden            " remember undo after quitting
-
-
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-"cmap w!! %!sudo tee > /dev/null %
-
-" map escape to fj or jf to avoid the ESC key
-"inoremap fj <Esc> 
-"inoremap jf <Esc>
-
-" Quick movement in insert mode
-"" first non-blank test of line
-"" end of line
-"" start editting on new line above current line
-"" inoremap II <Esc>I
-"" inoremap AA <Esc>A
-"" inoremap OO <Esc>O
+" Persistence between
+set viminfo='20,\"500 " remember copy registers after quitting in the viminfo file
+set hidden            " remember undo after quitting
 
 " Bubble single lines up and down
-"nmap <C-Up> ddkP
-"nmap <C-Down> ddp
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
 
 
-"""""""""" Spell Checking """"""""""
-"autocmd BufNewFile,BufRead *.txt,*.html,README*, *.wiki set spell
-
-
-"""""""""" Windows, Splits, and Resizing """"""""""
-" easier window navigation
-"nmap <C-h> <C-w>h
-"nmap <C-j> <C-w>j
-"nmap <C-k> <C-w>k
-"nmap <C-l> <C-w>l
-
-" Easy resizing
-"nnoremap <silent> + :exe "resize " . (winheight(0) * 5/2)<CR>
-"nnoremap <silent> - :exe "resize " . (winheight(0) * 2/5)<CR>
-
-" Maps to resizing a window split
-"nnoremap <silent> <A-u> <C-W><
-"nnoremap <silent> <A-i> <C-W>>
-"nnoremap <silent> + <C-W>+<CR>
-"nnoremap <silent> - <C-W>-<CR>
-" Maps Alt-[s.v] to horizontal and vertical split respectively
-"nnoremap <silent> <A-s> :split<CR>
-"nnoremap <silent> <A-v> :vsplit<CR>
-" Maps Alt-[n,p] for moving next and previous window respectively
-"nnoremap <silent> <A-n> <C-w><C-w>
-"nnoremap <silent> <A-;> <C-w><S-w>
-
-
-"""""""""" Tabs and Indentation """"""""""
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
-
-"""""""""" Plugins """"""""""
+""" Plugins """
 " VimWiki
-" set vimwiki default directories
-let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'},
-                    \ {'path': '~/Dropbox/wikis/tech'}]
-" No camel case wikiwords
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'}, {'path': '~/Dropbox/wikis/tech'}]
 let g:vimwiki_camel_case=0
+
+" NERDTree
+let NERDTreeQuitOnOpen=0
 
 " Numbers
 nnoremap <F3> :NumbersToggle<CR>
 
 
-"""""""""" Misc Commands """"""""""
+""" Misc Commands """
 " F5 - Insert Timestamp
 "nnoremap <F5> "=strftime("%a %b %d %Y")<CR>P
-"inoremap <F5> <C-R>=strftime("%a %b %d %Y")<CR>
-
-" replace 'dts' with time stamp
-" iab <expr> dts strftime("%a %b %d %Y")
+inoremap <F5> <C-R>=strftime("%a %b %d %Y")<CR>
 
 " Gradle syntax highlighting
 au BufNewFile,BufRead *.gradle setf groovy
-
 
 """""""""" spf13 config """"""""""
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
