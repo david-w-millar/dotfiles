@@ -22,10 +22,10 @@ alias -g V='|vim -'
 alias -g B='&>/dev/null &'
 alias -g D='&>/dev/null &|'
 alias -g LC='|tee lastcommand.log'
+alias -g E=' 2>&1 | tee lastcommand.log'
 
 ### Tmux
-#alias tmux="TERM=screen-256color-bce tmux -2"
-#alias tmux="tmux -2"
+alias tmux="tmux -2"
 
 ### System Debugging
 alias logtail='tail -f /var/log/dmesg'
@@ -35,18 +35,7 @@ alias logtail='tail -f /var/log/dmesg'
 #alias paci='sudo packer -S --noedit --noconfirm'
 #alias pacs='packer -Ss'
 #alias pacr='sudo pacman -R'
-alias -g E=' 2>&1 | tee lastcommand.log'
-
-### Arch
-alias pacu='sudo packer -Syu --noedit --noconfirm'
-alias paci='sudo packer -S --noedit --noconfirm'
-alias pacs='packer -Ss'
-alias pacr='sudo pacman -R'
-alias journaltail='sudo journalctl -x --full -f'
-
-### Vagrant
-alias vagdebug='export VAGRANT_LOG=debug'
-alias vaginfo='export VAGRANT_LOG=info'
+#alias journaltail='sudo journalctl -x --full -f'
 
 ### Misc
 alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
@@ -63,6 +52,14 @@ function grailsTestOrder() { grep testsuite target/test-reports/TESTS-TestSuites
 alias testorder=grailsTestOrder
 
 alias cpb='rsync -rv $1 $2 --progress'
+
+### Media
 alias npr='mplayer -playlist http://207.245.67.209/91FM.m3u'
 alias kittehs='chromium http://www.fortlangley.com/kittens'
 
+### Ruby
+alias jewelme="jeweler --rspec --bundler --cucumber --summary 'CHANGEME' --description 'CHANGEME' --rdoc "
+
+### Vagrant
+alias vagdebug='export VAGRANT_LOG=debug'
+alias vaginfo='export VAGRANT_LOG=info'

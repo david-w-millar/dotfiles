@@ -9,7 +9,7 @@ display_status () { echo "::::: $1 :::::"; }
 dir=$PWD
 
 olddir=~/dotfiles_old
-files="tmux.conf Xdefaults zshrc zsh cdmrc vimrc.local vimrc.bundles.local gitconfig"
+files="gemrc tmux.conf Xdefaults zshrc zsh cdmrc vimrc.local vimrc.bundles.local gitconfig"
 
 # backup
 display_status "Backing up old configs" 
