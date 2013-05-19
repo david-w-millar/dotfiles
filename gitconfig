@@ -6,12 +6,11 @@
   autocrlf = input
 [color]
   ui = true
-
 [alias]
   serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 [credential]
-	helper = cache
+  helper = cache
 [github]
-	user = david-w-millar
+  user = david-w-millar
 [hub]
-	protocol = https
+  protocol = https
