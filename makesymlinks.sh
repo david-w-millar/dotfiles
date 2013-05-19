@@ -29,7 +29,7 @@ done
 ### One-Offs
 display_status "Creating Grails scripts symlink link"
 mkdir -p ~/.grails
-ln -s $dir/grails/scripts ~/grails/scripts
+ln -s $dir/grails/scripts ~/.grails/scripts
 
 ### Misc
 mkdir ~/.ssh
