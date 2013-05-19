@@ -13,3 +13,5 @@
 	helper = cache
 [github]
 	user = david-w-millar
+[hub]
+	protocol = https
