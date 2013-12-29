@@ -4,7 +4,7 @@
 "
 
 " Map Leader
-"let mapleader = ","
+" let mapleader = ","
 set scrolloff=3   " 2 lines above/below cursor when scrolling
 
 " Tab and Indent
@@ -25,6 +25,7 @@ nmap <C-Down> ddp
 
 
 """ Plugins """
+
 " VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'}, {'path': '~/Dropbox/wikis/tech'}]
 let g:vimwiki_camel_case=0

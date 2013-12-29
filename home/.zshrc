@@ -30,6 +30,11 @@ ZSH_THEME="blinks"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
+### oh-my-zsh tmux plugin config
+#export ZSH_TMUX_AUTOSTART=true
+zstyle ':omz:module:tmux' auto-start 'yes'
+if [ "$TMUX" = "" ]; then tmux -2; fi
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -37,6 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 #plugins=(git rails ruby gem github mysql vagrant archlinux gradle grails python redis-cli rvm ssh-agent vundle)
 #plugins=(git-flow git ruby gem vagrant gradle grails python rvm ssh-agent vundle)
 plugins=(tmux tmuxinator git-flow git-extras git ruby gem bundler vagrant gradle grails python rvm ssh-agent vundle capistrano colored-man cp gnu-utils heroku)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,11 +61,14 @@ export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_21
 export IDEA_JDK=/usr/lib/jvm/jdk1.7.0_21
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
+export EDITOR="vim"
 
-### oh-my-zsh tmux plugin config
-#export ZSH_TMUX_AUTOSTART=true
-zstyle ':omz:module:tmux' auto-start 'yes'
-if [ "$TMUX" = "" ]; then tmux -2; fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Autoenv
+# source ~/.autoenv/activate.sh
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

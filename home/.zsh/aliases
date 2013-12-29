@@ -37,20 +37,23 @@ alias logtail='tail -f /var/log/dmesg'
 #alias pacr='sudo pacman -R'
 #alias journaltail='sudo journalctl -x --full -f'
 
+### Common Locations
+alias c='cd ~/_code'
+alias ws='cd ~/workspaces'
+alias millarts='cd ~/Dropbox/millarts'
+
 ### Misc
 alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
 alias ack='ack-grep'
 
-### Misc Programming
-alias ws="cd ~/workspaces"
-
 ### Network stuff
 alias servedir="python -m SimpleHTTPServer"
 
-### Grails Testing Wierdness
+### Grails Testing Weirdness
 function grailsTestOrder() { grep testsuite target/test-reports/TESTS-TestSuites.xml | grep -v testsuites | cut -d\  -f8-9 | sed -E 's/name="(.*)" package="(.*)"/\2.\1/' | grep .  }
 alias testorder=grailsTestOrder
 
+### Progress for copy
 alias cpb='rsync -rv $1 $2 --progress'
 
 ### Media

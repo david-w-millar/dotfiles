@@ -9,7 +9,7 @@
 --type-set=less=.less
 
 # Ruby
---type-add=ruby=.haml,.rake,.erb,.gemspec
+--type-add=ruby=.haml,.rake,.erb,.gemspec,.watchr
 --type-set=cucumber=.feature
 --type-set=puppet=.pp
 
@@ -17,7 +17,3 @@
 --ignore-dir=tmp
 --ignore-dir=build
 --ignore-dir=target
-
-
-
-
