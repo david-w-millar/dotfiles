@@ -1,0 +1,10 @@
+# OS X Configs
+# requires that brew be installed first
+
+# Brew Hacks
+# coreutils trump apple
+GNU_BIN = `$(brew --prefix coreutils)/libexec/gnubin`
+export PATH="$GNU_BIN;$PATH"
+
+
+

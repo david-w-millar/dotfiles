@@ -27,7 +27,9 @@ cask install virtualbox
 cask install sourcetree
 
 ## windowscask
-install moom
+#cask install moom
+cask install spectacle
+cask install totalspaces
 
 ## misc
 cask install pckeyboardhack
