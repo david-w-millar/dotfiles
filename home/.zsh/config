@@ -1,3 +1,10 @@
+# Ignore boring history entries
+export HISTIGNORE="exit:date:cd:ls:cd -:pwd:* --help"
+# Leave man page text resident
+export MANPAGER="less -X"
+
+### Old
+
 ### Options
 # Allow comments in an interactive shell.
 #setopt InteractiveComments 2>/dev/null

@@ -1,0 +1,52 @@
+# Install native apps
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
+## web
+cask install google-chrome
+cask install firefox
+cask install opera
+
+## media
+cask install imagealpha
+cask install imageoptim
+cask install miro-video-converter
+cask install vlc
+cask install amazon-cloud-player
+
+## utils
+cask install dropbox
+cask install iterm2
+cask install macvim
+cask install sublime-text
+cask install the-unarchiver
+cask install torbrowser
+cask install transmission
+cask install virtualbox
+cask install sourcetree
+
+## windowscask
+install moom
+
+## misc
+cask install pckeyboardhack
+cask install steam
+cask install appzapper
+cask install alfred
+
+## productivity
+cask install fantastical
+cask install chatology
+cask install kindle
+cask install skype
+cask install skitch
+
+## dev
+cask install intellij-idea
+cask install rubymine
+cask install pycharm
+cask install charles
+cask install github
+
+

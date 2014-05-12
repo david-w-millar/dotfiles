@@ -63,15 +63,3 @@ export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
 export EDITOR="vim"
 
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Autoenv
-# source ~/.autoenv/activate.sh
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/home/dave/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/home/dave/.gvm/bin/gvm-init.sh"

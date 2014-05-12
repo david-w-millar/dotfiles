@@ -1,0 +1,48 @@
+# Homebrew Packages
+
+## stay current
+update
+upgrade
+
+## core
+# Add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+install coreutils
+install moreutils
+install findutils
+
+## core
+install vim --override-system-vi
+install tmux
+install ack
+install wget --enable-iri
+install unar
+install tree
+install bash
+install git
+install gnu-sed --default-names
+install pv
+install urlview
+
+## dev
+install hub
+install python
+install node
+
+## misc
+install chrome-cli
+install foremost
+install imagemagick --with-webp
+install pigz
+install webkit2png
+install zopfli
+install heroku-toolbelt
+
+## sec
+install sqlmap
+install nmap
+
+## brew
+install brew-cask
+
+# clean up cellar
+cleanup
