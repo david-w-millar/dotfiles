@@ -27,6 +27,11 @@ install urlview
 install hub
 install python
 install node
+install rest-shell
+install resty
+install spring-roo
+install play
+install jq
 
 ## misc
 install chrome-cli
@@ -36,6 +41,8 @@ install pigz
 install webkit2png
 install zopfli
 install heroku-toolbelt
+install osxfuse
+install httrack
 
 ## sec
 install sqlmap
