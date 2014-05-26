@@ -19,9 +19,11 @@ install unar
 install tree
 install bash
 install git
+install mercurial
 install gnu-sed --default-names
 install pv
 install urlview
+install xclip
 
 ## dev
 install hub
@@ -44,9 +46,10 @@ install heroku-toolbelt
 install osxfuse
 install httrack
 
-## sec
+## sec / networking
 install sqlmap
 install nmap
+install wireshark
 
 ## brew
 install brew-cask
