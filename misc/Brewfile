@@ -34,6 +34,7 @@ install resty
 install spring-roo
 install play
 install jq
+install drip
 
 ## misc
 install chrome-cli
@@ -45,11 +46,13 @@ install zopfli
 install heroku-toolbelt
 install osxfuse
 install httrack
+install markdown
 
 ## sec / networking
 install sqlmap
 install nmap
 install wireshark
+install freerdp
 
 ## brew
 install brew-cask
