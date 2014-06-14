@@ -1,0 +1,64 @@
+# Homebrew Packages
+
+## stay current
+update
+upgrade
+
+## core
+# Add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+install coreutils
+install moreutils
+install findutils
+
+## core
+install vim --override-system-vi
+install tmux
+install ack
+install wget --enable-iri
+install unar
+install tree
+install bash
+install git
+install mercurial
+install gnu-sed --default-names
+install pv
+install urlview
+install xclip
+
+## dev
+install hub
+install python
+install node
+install rest-shell
+install resty
+install spring-roo
+install play
+install jq
+install drip
+install sbt
+install cheat
+install swig
+
+## misc
+install chrome-cli
+install foremost
+install imagemagick --with-webp
+install pigz
+install webkit2png
+install zopfli
+install heroku-toolbelt
+install osxfuse
+install httrack
+install markdown
+
+## sec / networking
+install sqlmap
+install nmap
+install wireshark
+install freerdp
+
+## brew
+install brew-cask
+
+# clean up cellar
+cleanup
