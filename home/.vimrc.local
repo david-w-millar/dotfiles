@@ -27,7 +27,7 @@ nmap <C-Down> ddp
 """ Plugins """
 
 " VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'}, {'path': '~/Dropbox/wikis/tech'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/millar'}, {'path': '~/Dropbox/wikis/tech'}, {'path': '~/Dropbox/wikis/elsevier'}]
 let g:vimwiki_camel_case=0
 
 " NERDTree
