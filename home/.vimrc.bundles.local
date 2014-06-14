@@ -1,4 +1,5 @@
 " Bundles not included in spf13
+Bundle 'davidpthomas/vim4rally'
 Bundle 'vimwiki'
 Bundle 'sudar/vim-arduino-syntax'
 
