@@ -35,6 +35,9 @@ install spring-roo
 install play
 install jq
 install drip
+install sbt
+install cheat
+install swig
 
 ## misc
 install chrome-cli
