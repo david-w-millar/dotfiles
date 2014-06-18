@@ -1,5 +1,5 @@
 "
-" David Millar
+" David W Millar
 " .vimrc.local
 "
 
@@ -15,13 +15,17 @@ set expandtab
 set smartindent
 set autoindent
 
-" Persistence between
+" Persistence
 set viminfo='20,\"500 " remember copy registers after quitting in the viminfo file
 set hidden            " remember undo after quitting
 
 " Bubble single lines up and down
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
+"nmap <C-Up> ddkP
+"nmap <C-Down> ddp
+
+""" Misc """
+" Delete trailing white space and Dos-returns and to expand tabs to spaces.
+nnoremap <Leader>t :set et<CR>:retab!<CR>:%s/[\r \t]\+$//<CR>
 
 
 """ Plugins """
@@ -42,8 +46,20 @@ nnoremap <F3> :NumbersToggle<CR>
 "nnoremap <F5> "=strftime("%a %b %d %Y")<CR>P
 inoremap <F5> <C-R>=strftime("%a %b %d %Y")<CR>
 
-" Gradle syntax highlighting
+" Language syntax highlighting
+
+" Jvm
 au BufNewFile,BufRead *.gradle setf groovy
+
+" asciidoc
+" Reformat paragraphs and list.
+nnoremap <Leader>r gq}
+autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
+        \ setlocal autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 filetype=asciidoc
+        \ textwidth=70 wrap formatoptions=tcqn
+        \ formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
+        \ comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
+
 
 """""""""" spf13 config """"""""""
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
