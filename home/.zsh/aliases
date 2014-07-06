@@ -40,11 +40,12 @@ alias logtail='tail -f /var/log/dmesg'
 ### Common Locations
 alias c='cd ~/_code'
 alias ws='cd ~/workspaces'
+alias ews='cd ~/eworkspaces'
 alias millarts='cd ~/Dropbox/millarts'
 
 ### Misc
 alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
-alias ack='ack-grep'
+#alias ack='ack-grep'
 
 ### Network stuff
 alias servedir="python -m SimpleHTTPServer"

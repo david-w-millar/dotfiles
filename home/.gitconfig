@@ -15,4 +15,7 @@
 [hub]
   protocol = https
 [push]
-	default = simple
+  default = simple
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f

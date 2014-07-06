@@ -1,8 +1,18 @@
 " Bundles not included in spf13
-Bundle 'davidpthomas/vim4rally'
+
 Bundle 'vimwiki'
+
+" Language Integrations
+Bundle 'sukima/asciidoc-vim'
+
+" Tool Integrations
+Bundle 'davidpthomas/vim4rally'
+
+" Arduino
 Bundle 'sudar/vim-arduino-syntax'
+Bundle 'jplaut/vim-arduino-ino'
 
 "Bundle 'ShowMarks'
 "Bundle 'vimux'
 "Bundle 'vim-powerline'
+
