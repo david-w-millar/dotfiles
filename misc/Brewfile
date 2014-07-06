@@ -38,6 +38,11 @@ install drip
 install sbt
 install cheat
 install swig
+install chromedriver
+install ctags
+
+## Hardware
+install picocom
 
 ## misc
 install chrome-cli
@@ -50,6 +55,7 @@ install heroku-toolbelt
 install osxfuse
 install httrack
 install markdown
+install htop-osx
 
 ## sec / networking
 install sqlmap

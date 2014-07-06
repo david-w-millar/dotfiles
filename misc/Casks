@@ -7,6 +7,7 @@ tap caskroom/versions
 cask install google-chrome
 cask install firefox
 cask install opera
+cask install vienna
 
 ## media
 cask install imagealpha
@@ -36,6 +37,7 @@ cask install pckeyboardhack
 cask install steam
 cask install appzapper
 cask install alfred
+cask install cheatsheet
 
 ## productivity
 cask install fantastical
@@ -51,6 +53,7 @@ cask install pycharm
 cask install charles
 cask install github
 cask install wireshark
+cask install processing
 
 ## Microcontrollers
 cask install fritzing
