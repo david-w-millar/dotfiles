@@ -44,6 +44,10 @@ install ctags
 ## Hardware
 install picocom
 
+## Virtualization
+install docker
+
+
 ## misc
 install chrome-cli
 install foremost
@@ -54,6 +58,7 @@ install zopfli
 install heroku-toolbelt
 install osxfuse
 install httrack
+install jmeter
 install markdown
 install htop-osx
 

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+# Install Gems
+#
+
+gem install vagrant-wrapper
+
+
