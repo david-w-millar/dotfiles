@@ -24,8 +24,11 @@ cask install sublime-text
 cask install the-unarchiver
 cask install torbrowser
 cask install transmission
-cask install virtualbox
 cask install sourcetree
+
+## Virtualization
+cask install virtualbox
+cask install boot2docker
 
 ## windowscask
 #cask install moom
