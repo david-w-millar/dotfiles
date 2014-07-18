@@ -47,6 +47,7 @@ install picocom
 
 ## Virtualization
 install docker
+install juju
 
 
 ## misc
@@ -68,6 +69,7 @@ install sqlmap
 install nmap
 install wireshark
 install freerdp
+install splint
 
 ## brew
 install brew-cask

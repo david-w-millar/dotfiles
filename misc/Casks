@@ -29,6 +29,8 @@ cask install sourcetree
 ## Virtualization
 cask install virtualbox
 cask install boot2docker
+cask install vagrant163
+cask install vagrant-manager
 
 ## windowscask
 #cask install moom
@@ -41,6 +43,8 @@ cask install steam
 cask install appzapper
 cask install alfred
 cask install cheatsheet
+cask install google-earth
+cask install google-drive
 
 ## productivity
 cask install fantastical
@@ -63,3 +67,5 @@ cask install coolterm
 cask install fritzing
 cask install arduino
 
+## Game Dev
+cask install tiled
