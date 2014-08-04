@@ -1,4 +1,6 @@
+#
 # Install native apps
+#
 
 install caskroom/cask/brew-cask
 tap caskroom/versions
@@ -15,6 +17,10 @@ cask install imageoptim
 cask install miro-video-converter
 cask install vlc
 cask install amazon-cloud-player
+cask install audacity
+
+## Visualization
+cask install graphviz
 
 ## utils
 cask install dropbox
@@ -45,6 +51,10 @@ cask install alfred
 cask install cheatsheet
 cask install google-earth
 cask install google-drive
+cask install eaglefiler
+cask install insertpic
+cask install all-the-gifs
+
 
 ## productivity
 cask install fantastical

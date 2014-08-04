@@ -25,6 +25,12 @@ install pv
 install urlview
 install xclip
 
+## Web
+brew install tidyp
+
+## Media
+install sox
+
 ## dev
 install hub
 install python
