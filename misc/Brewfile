@@ -27,6 +27,7 @@ install xclip
 
 ## Web
 brew install tidyp
+brew install phantomjs
 
 ## Media
 install sox
@@ -47,6 +48,9 @@ install swig
 install chromedriver
 install ctags
 install jenkins
+
+## Data
+install datamash
 
 ## Hardware
 install picocom
