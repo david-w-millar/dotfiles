@@ -28,6 +28,8 @@ install xclip
 ## Web
 brew install tidyp
 brew install phantomjs
+brew install selenium-server-standalone
+brew install chromedriver
 
 ## Media
 install sox
@@ -45,9 +47,10 @@ install drip
 install sbt
 install cheat
 install swig
-install chromedriver
 install ctags
-install jenkins
+#install jenkins
+install go
+install spring-loaded
 
 ## Data
 install datamash
