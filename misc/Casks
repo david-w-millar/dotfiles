@@ -79,6 +79,7 @@ cask install wireshark
 cask install processing
 cask install coolterm
 cask install rubymine
+cask install geppetto
 
 ## Microcontrollers
 cask install fritzing

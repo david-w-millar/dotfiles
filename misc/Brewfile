@@ -28,6 +28,7 @@ install xclip
 ## Web
 brew install tidyp
 brew install phantomjs
+brew install slimerjs
 brew install selenium-server-standalone
 brew install chromedriver
 
@@ -54,6 +55,8 @@ install spring-loaded
 
 ## Data
 install datamash
+install protobuf
+install protobuf-c
 
 ## Hardware
 install picocom
@@ -61,7 +64,6 @@ install picocom
 ## Virtualization
 install docker
 install juju
-
 
 ## misc
 install chrome-cli
@@ -76,6 +78,7 @@ install httrack
 install jmeter
 install markdown
 install htop-osx
+install gpg
 
 ## sec / networking
 install sqlmap
