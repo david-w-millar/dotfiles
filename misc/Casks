@@ -61,6 +61,8 @@ cask install eaglefiler
 cask install insertpic
 cask install all-the-gifs
 
+## Security
+cask install hashcat
 
 ## productivity
 cask install fantastical
