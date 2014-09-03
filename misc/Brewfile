@@ -86,6 +86,7 @@ install nmap
 install wireshark
 install freerdp
 install splint
+install zmap
 
 ## brew
 install brew-cask
