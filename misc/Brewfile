@@ -87,6 +87,7 @@ install wireshark
 install freerdp
 install splint
 install zmap
+install libnet
 
 ## brew
 install brew-cask
