@@ -52,6 +52,7 @@ install ctags
 #install jenkins
 install go
 install spring-loaded
+install proguard
 
 ## Data
 install datamash
@@ -88,6 +89,7 @@ install freerdp
 install splint
 install zmap
 install libnet
+install libnids
 
 ## brew
 install brew-cask
