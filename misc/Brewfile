@@ -65,6 +65,7 @@ install picocom
 ## Virtualization
 install docker
 install juju
+install fig
 
 ## misc
 install chrome-cli
@@ -90,6 +91,8 @@ install splint
 install zmap
 install libnet
 install libnids
+install denominator
+install skipfish
 
 ## brew
 install brew-cask
