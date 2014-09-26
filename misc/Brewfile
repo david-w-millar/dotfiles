@@ -53,6 +53,8 @@ install ctags
 install go
 install spring-loaded
 install proguard
+install lua
+install lua51
 
 ## Data
 install datamash
