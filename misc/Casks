@@ -11,6 +11,8 @@ cask install firefox
 cask install opera
 cask install vienna
 cask install multifirefox
+cask install google-web-designer
+cask install google-hangouts
 
 ## media
 cask install imagealpha
@@ -20,8 +22,9 @@ cask install vlc
 cask install amazon-cloud-player
 cask install audacity
 
-## Visualization
+## Data
 cask install graphviz
+cask install google-refine
 
 ## utils
 cask install dropbox
@@ -82,6 +85,7 @@ cask install processing
 cask install coolterm
 cask install rubymine
 cask install geppetto
+cask install jenkins-menu
 
 ## Microcontrollers
 cask install fritzing

@@ -14,6 +14,7 @@ install findutils
 install vim --override-system-vi
 install tmux
 install ack
+install ag
 install wget --enable-iri
 install unar
 install tree
@@ -31,6 +32,7 @@ brew install phantomjs
 brew install slimerjs
 brew install selenium-server-standalone
 brew install chromedriver
+brew install googlecl
 
 ## Media
 install sox
@@ -68,6 +70,7 @@ install picocom
 install docker
 install juju
 install fig
+install awscli
 
 ## misc
 install chrome-cli
@@ -95,9 +98,15 @@ install libnet
 install libnids
 install denominator
 install skipfish
+install tor
+
+
+## Make pbcopy play well with tmux
+brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 
 ## brew
 install brew-cask
 
 # clean up cellar
 cleanup
+
