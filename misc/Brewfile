@@ -1,112 +1,113 @@
+#!/usr/bin/env bash
 # Homebrew Packages
 
 ## stay current
-update
-upgrade
+brew update
+brew upgrade
 
 ## core
 # Add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
-install moreutils
-install findutils
+brew install coreutils
+brew install moreutils
+brew install findutils
 
 ## core
-install vim --override-system-vi
-install tmux
-install ack
-install ag
-install wget --enable-iri
-install unar
-install tree
-install bash
-install git
-install mercurial
-install gnu-sed --default-names
-install pv
-install urlview
-install xclip
+brew install vim --override-system-vi
+brew install tmux
+brew install ack
+brew install ag
+brew install wget --enable-iri
+brew install unar
+brew install tree
+brew install bash
+brew install git
+brew install mercurial
+brew install gnu-sed --default-names
+brew install pv
+brew install urlview
+brew install xclip
 
 ## Web
-brew install tidyp
-brew install phantomjs
-brew install slimerjs
-brew install selenium-server-standalone
-brew install chromedriver
-brew install googlecl
+brew brew install tidyp
+brew brew install phantomjs
+brew brew install slimerjs
+brew brew install selenium-server-standalone
+brew brew install chromedriver
+brew brew install googlecl
 
 ## Media
-install sox
+brew install sox
 
 ## dev
-install hub
-install python
-install node
-install rest-shell
-install resty
-install spring-roo
-install play
-install jq
-install drip
-install sbt
-install cheat
-install swig
-install ctags
+brew install hub
+brew install python
+brew install node
+brew install rest-shell
+brew install resty
+brew install spring-roo
+brew install play
+brew install jq
+brew install drip
+brew install sbt
+brew install cheat
+brew install swig
+brew install ctags
 #install jenkins
-install go
-install spring-loaded
-install proguard
-install lua
-install lua51
+brew install go
+brew install spring-loaded
+brew install proguard
+brew install lua
+brew install lua51
 
 ## Data
-install datamash
-install protobuf
-install protobuf-c
+brew install datamash
+brew install protobuf
+brew install protobuf-c
 
 ## Hardware
-install picocom
+brew install picocom
 
 ## Virtualization
-install docker
-install juju
-install fig
-install awscli
+brew install docker
+brew install juju
+brew install fig
+brew install awscli
 
 ## misc
-install chrome-cli
-install foremost
-install imagemagick --with-webp
-install pigz
-install webkit2png
-install zopfli
-install heroku-toolbelt
-install osxfuse
-install httrack
-install jmeter
-install markdown
-install htop-osx
-install gpg
+brew install chrome-cli
+brew install foremost
+brew install imagemagick --with-webp
+brew install pigz
+brew install webkit2png
+brew install zopfli
+brew install heroku-toolbelt
+brew install osxfuse
+brew install httrack
+brew install jmeter
+brew install markdown
+brew install htop-osx
+brew install gpg
 
 ## sec / networking
-install sqlmap
-install nmap
-install wireshark
-install freerdp
-install splint
-install zmap
-install libnet
-install libnids
-install denominator
-install skipfish
-install tor
+brew install sqlmap
+brew install nmap
+brew install wireshark
+brew install freerdp
+brew install splint
+brew install zmap
+brew install libnet
+brew install libnids
+brew install denominator
+brew install skipfish
+brew install tor
 
 
 ## Make pbcopy play well with tmux
 brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 
 ## brew
-install brew-cask
+brew install brew-cask
 
 # clean up cellar
-cleanup
+brew cleanup
 

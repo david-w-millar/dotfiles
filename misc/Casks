@@ -2,94 +2,95 @@
 # Install native apps
 #
 
-install caskroom/cask/brew-cask
-tap caskroom/versions
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
 ## web
-cask install google-chrome
-cask install firefox
-cask install opera
-cask install vienna
-cask install multifirefox
-cask install google-web-designer
-cask install google-hangouts
+brew cask install google-chrome
+brew cask install firefox
+brew cask install opera
+brew cask install vienna
+brew cask install multifirefox
+brew cask install google-web-designer
+brew cask install google-hangouts
 
 ## media
-cask install imagealpha
-cask install imageoptim
-cask install miro-video-converter
-cask install vlc
-cask install amazon-cloud-player
-cask install audacity
+brew cask install imagealpha
+brew cask install imageoptim
+brew cask install miro-video-converter
+brew cask install vlc
+brew cask install amazon-cloud-player
+brew cask install audacity
 
 ## Data
-cask install graphviz
-cask install google-refine
+brew cask install graphviz
+brew cask install google-refine
 
 ## utils
-cask install dropbox
-cask install iterm2
-cask install macvim
-cask install sublime-text
-cask install the-unarchiver
-cask install torbrowser
-cask install transmission
-cask install sourcetree
-cask install teamviewer
+brew cask install dropbox
+brew cask install iterm2
+brew cask install macvim
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install torbrowser
+brew cask install transmission
+brew cask install sourcetree
+brew cask install clipmenu
 
 ## Docs
-cask install qlmarkdown
+brew cask install qlmarkdown
 
 
 ## Virtualization
-cask install virtualbox
-cask install boot2docker
-cask install vagrant163
-cask install vagrant-manager
+brew cask install virtualbox
+brew cask install boot2docker
+brew cask install vagrant163
+brew cask install vagrant-manager
 
 ## windowscask
 #cask install moom
-cask install spectacle
-cask install totalspaces
+brew cask install spectacle
+brew cask install totalspaces
 
 ## misc
-cask install pckeyboardhack
-cask install steam
-cask install appzapper
-cask install alfred
-cask install cheatsheet
-cask install google-earth
-cask install google-drive
-cask install eaglefiler
-cask install insertpic
-cask install all-the-gifs
+brew cask install seil
+brew cask install steam
+brew cask install appzapper
+brew cask install alfred
+brew cask install cheatsheet
+brew cask install google-earth
+brew cask install google-drive
+brew cask install eaglefiler
+brew cask install insertpic
+brew cask install all-the-gifs
+brew cask install onepassword
 
 ## Security
-cask install hashcat
+#brew cask install hashcat
 
 ## productivity
-cask install fantastical
-cask install chatology
-cask install kindle
-cask install skype
-cask install skitch
+brew cask install fantastical
+#brew cask install chatology
+brew cask install kindle
+#brew cask install skype
+brew cask install skitch
 
 ## dev
-cask install intellij-idea
-cask install rubymine
-cask install pycharm
-cask install charles
-cask install github
-cask install wireshark
-cask install processing
-cask install coolterm
-cask install rubymine
-cask install geppetto
-cask install jenkins-menu
+brew cask install intellij-idea
+brew cask install rubymine
+brew cask install pycharm
+brew cask install charles
+brew cask install github
+brew cask install wireshark
+brew cask install processing
+#brew cask install coolterm
+brew cask install rubymine
+brew cask install geppetto
+brew cask install jenkins-menu
 
 ## Microcontrollers
-cask install fritzing
-cask install arduino
+brew cask install fritzing
+brew cask install arduino
 
 ## Game Dev
-cask install tiled
+brew cask install tiled

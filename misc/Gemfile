@@ -3,6 +3,9 @@
 # Install Gems
 #
 
-gem install vagrant-wrapper
+sudo -v
+
+#gem install vagrant-wrapper
+sudo gem install teamocil
 
 
