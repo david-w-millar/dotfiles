@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Node Modules
+#
+
+sudo npm install -g iectrl
+
+
+
