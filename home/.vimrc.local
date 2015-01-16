@@ -19,6 +19,10 @@ set autoindent
 set viminfo='20,\"500 " remember copy registers after quitting in the viminfo file
 set hidden            " remember undo after quitting
 
+" No Bells"
+set visualbell
+set t_vb=
+
 " Bubble single lines up and down
 "nmap <C-Up> ddkP
 "nmap <C-Down> ddp

@@ -72,6 +72,7 @@ brew install docker
 brew install juju
 brew install fig
 brew install awscli
+brew install qemu
 
 ## misc
 brew install chrome-cli
@@ -87,6 +88,8 @@ brew install jmeter
 brew install markdown
 brew install htop-osx
 brew install gpg
+brew install asciidoc
+brew install source-highlight
 
 ## sec / networking
 brew install sqlmap

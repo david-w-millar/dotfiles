@@ -1,13 +1,15 @@
 " Bundles not included in spf13
 
 Bundle 'vimwiki'
+Bundle 'vim-scripts/nginx.vim'
 
 " Language Integrations
 Bundle 'sukima/asciidoc-vim'
+Bundle 'puppetlabs/puppet-syntax-vim'
 
 " Arduino
-Bundle 'sudar/vim-arduino-syntax'
-Bundle 'jplaut/vim-arduino-ino'
+"Bundle 'sudar/vim-arduino-syntax'
+"Bundle 'jplaut/vim-arduino-ino'
 
 "Bundle 'ShowMarks'
 "Bundle 'vimux'

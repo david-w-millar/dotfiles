@@ -2,6 +2,8 @@
 export HISTIGNORE="exit:date:cd:ls:cd -:pwd:* --help"
 # Leave man page text resident
 export MANPAGER="less -X"
+autoload -U zmv
+
 
 ### Old
 

@@ -3,7 +3,7 @@
   name = David W Millar
 [core]
   editor = vim
-  autocrlf = input
+  excludesfile = /Users/millard/.gitignore_global
 [color]
   ui = true
 [alias]
@@ -12,8 +12,6 @@
   helper = cache
 [github]
   user = david-w-millar
-[hub]
-  protocol = https
 [push]
   default = simple
 [filter "media"]

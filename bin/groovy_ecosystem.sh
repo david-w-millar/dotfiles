@@ -23,4 +23,6 @@ echo 'Y' | gvm i springboot
 echo 'Y' | gvm i vertx
 echo 'Y' | gvm i griffon
 echo 'Y' | gvm i glide
+echo 'Y' | gvm i jbake
+echo 'Y' | gvm i crash
 

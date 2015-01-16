@@ -5,7 +5,6 @@
 
 mkdir -p ~/_code
 mkdir -p ~/_temp
-mkdir -p ~/_workspaces
 mkdir -p ~/workspaces
 mkdir -p ~/bin
 

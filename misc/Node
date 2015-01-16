@@ -3,7 +3,31 @@
 # Node Modules
 #
 
-sudo npm install -g iectrl
+# Make sudo not required for global install
+sudo -v npm install -g npm-sudo-fix
+sudo -v npm-sudo-fix
 
 
+# CLI Tools
+npm install -g bcat        # Browser Cat
+npm install -g normit      # Google Translate
+npm install -g is-online
+npm install -g is-up
+npm install -g public-ip
+
+# Web
+npm install -g iectrl
+npm install -g karma-ievms
+
+# Dev
+npm install -g grunt-cli
+npm install -g protractor
+npm install -g newman      # CLI for Postman
+
+# App Infrastructure
+npm install -g nodeginx
+
+# Project Scaffolding
+npm install - gyo
+npm install -g generator-jhipster
 
