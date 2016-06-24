@@ -4,8 +4,7 @@ $Boxstarter.NoPassword=$false
 $Boxstarter.AutoLogin=$true
 
 
-### Basic config, reboot if necessary
-#Update-ExecutionPolicy Unrestricted
+### Basic config
 Enable-RemoteDesktop
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-TaskbarOptions -Size small -Combine Never
@@ -41,8 +40,4 @@ cinst virtualbox
 # TaskBar
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
-
-Install-ChocolateyPinnedTaskBarItem "$env:UserProfile\.babun\cygwin\bin\mintty.exe"
-
-
 
