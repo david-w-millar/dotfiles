@@ -10,13 +10,18 @@ TODO:
 
 ## [BoxStarter][boxstarter]
 
+From administrator PowerShell:
+
 ```PowerShell
-PS C:\> Set-ExecutionPolicy Unrestricted -Force  <1>
+PS C:\> Set-ExecutionPolicy Unrestricted -Force
 PS C:\> start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/david-w-millar/dotfiles/develop/win/boxstarter
 ```
+
+Or just [click here][windot]
+
 
 See [BoxStarter][boxstarter] for more information.
 
 
 [boxstarter]: http://boxstarter.org  "BoxStarter"
-
+[windot]: http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/david-w-millar/dotfiles/develop/win/boxstarter
