@@ -17,7 +17,7 @@ PS C:\> Set-ExecutionPolicy Unrestricted -Force
 PS C:\> start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/david-w-millar/dotfiles/develop/win/boxstarter
 ```
 
-Or just [click here][windot]
+Or just [click here][windot] from a windows box.
 
 
 See [BoxStarter][boxstarter] for more information.
