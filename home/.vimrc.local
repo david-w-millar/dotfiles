@@ -3,28 +3,14 @@
 " .vimrc.local
 "
 
-" Map Leader
-" let mapleader = ","
+" misc
 set scrolloff=3   " 2 lines above/below cursor when scrolling
-
-" Tab and Indent
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set smartindent
-set autoindent
-
-" Persistence
 set viminfo='20,\"500 " remember copy registers after quitting in the viminfo file
 set hidden            " remember undo after quitting
+set clipboard=unnamed
 
-" Bubble single lines up and down
-"nmap <C-Up> ddkP
-"nmap <C-Down> ddp
 
-""" Misc """
-" Delete trailing white space and Dos-returns and to expand tabs to spaces.
+" Delete trailing white space and Dos-returns and to expand tabs to spaces
 nnoremap <Leader>t :set et<CR>:retab!<CR>:%s/[\r \t]\+$//<CR>
 
 
@@ -41,32 +27,14 @@ let NERDTreeQuitOnOpen=0
 nnoremap <F3> :NumbersToggle<CR>
 
 
-""" Misc Commands """
-" F5 - Insert Timestamp
-"nnoremap <F5> "=strftime("%a %b %d %Y")<CR>P
-inoremap <F5> <C-R>=strftime("%a %b %d %Y")<CR>
-
 " Language syntax highlighting
 
 " Jvm
 au BufNewFile,BufRead *.gradle setf groovy
-
-" asciidoc
-" Reformat paragraphs and list.
-nnoremap <Leader>r gq}
-autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
-        \ setlocal autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 filetype=asciidoc
-        \ textwidth=70 wrap formatoptions=tcqn
-        \ formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
-        \ comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
 
 
 """""""""" spf13 config """"""""""
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
 set background=dark
 
-
-""" Arduino """"
-au BufRead,BufNewFile *.pde set filetype=arduino
-au BufRead,BufNewFile *.ino set filetype=arduino
 

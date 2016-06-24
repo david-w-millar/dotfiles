@@ -1,15 +1,15 @@
 [user]
-  email = d.millar@elsevier.com
-  name = David W Millar
+  email = david.w.millar@gmail.com
+  name  = David W Millar
 [core]
-  editor = vim
+  editor   = vim
   autocrlf = input
 [color]
   ui = true
 [alias]
   serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 [credential]
-  helper = cache
+  helper = osxkeychain
 [github]
   user = david-w-millar
 [hub]

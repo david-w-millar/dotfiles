@@ -3,17 +3,6 @@
 # An alias ending in a space allows the next word on the command line to
 # be alias expanded as well.
 alias sudo="sudo "
-#alias l='ls -CF --color=auto'
-#alias la='ls -A --color=auto'
-#alias ll='ls -lhF --color=auto'
-#alias ls='ls -l --color=auto -B'
-#alias grep='grep --color=auto'
-#alias pu='pushd'
-#alias po='popd'
-#alias ..='cd ..'
-#alias cd..='cd ..'
-#alias cd/='cd /'
-#alias vi='vim'
 
 alias -g L='|less'
 alias -g T='|tail'
@@ -25,10 +14,10 @@ alias -g LC='|tee lastcommand.log'
 alias -g E=' 2>&1 | tee lastcommand.log'
 
 ### Tmux
-alias tmux="tmux -2"
+#alias tmux="tmux -2"
 
 ### System Debugging
-alias logtail='tail -f /var/log/dmesg'
+#alias logtail='tail -f /var/log/dmesg'
 
 ### Arch
 #alias pacu='sudo packer -Syu --noedit --noconfirm'
@@ -38,10 +27,7 @@ alias logtail='tail -f /var/log/dmesg'
 #alias journaltail='sudo journalctl -x --full -f'
 
 ### Common Locations
-alias c='cd ~/_code'
 alias ws='cd ~/workspaces'
-alias ews='cd ~/eworkspaces'
-alias millarts='cd ~/Dropbox/millarts'
 
 ### Misc
 alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"'
@@ -50,20 +36,10 @@ alias make-ssh-key='ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date 
 ### Network stuff
 alias servedir="python -m SimpleHTTPServer"
 
-### Grails Testing Weirdness
-function grailsTestOrder() { grep testsuite target/test-reports/TESTS-TestSuites.xml | grep -v testsuites | cut -d\  -f8-9 | sed -E 's/name="(.*)" package="(.*)"/\2.\1/' | grep .  }
-alias testorder=grailsTestOrder
 
 ### Progress for copy
 alias cpb='rsync -rv $1 $2 --progress'
 
 ### Media
 alias npr='mplayer -playlist http://207.245.67.209/91FM.m3u'
-alias kittehs='chromium http://www.fortlangley.com/kittens'
 
-### Ruby
-alias jewelme="jeweler --rspec --bundler --cucumber --summary 'CHANGEME' --description 'CHANGEME' --rdoc "
-
-### Vagrant
-alias vagdebug='export VAGRANT_LOG=debug'
-alias vaginfo='export VAGRANT_LOG=info'
