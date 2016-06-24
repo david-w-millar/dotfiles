@@ -6,9 +6,9 @@ $Boxstarter.AutoLogin=$true
 
 ### Basic config, reboot if necessary
 Update-ExecutionPolicy Unrestricted
+Enable-RemoteDesktop
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-TaskbarOptions -Size small -Combine Never
-Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate
 
