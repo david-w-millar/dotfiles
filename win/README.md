@@ -14,6 +14,8 @@ From administrator PowerShell:
 
 ```PowerShell
 PS C:\> Set-ExecutionPolicy Unrestricted -Force
+PS C:\> Enable-PSRemoting -Force
+PS C:\> winrm quickconfig
 PS C:\> start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/david-w-millar/dotfiles/develop/win/boxstarter
 ```
 

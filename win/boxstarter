@@ -1,30 +1,55 @@
-Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableOpenFileExplorerToQuickAccess
+### Boxstarter options
+$Boxstarter.RebootOk=$true
+$Boxstarter.NoPassword=$false
+$Boxstarter.AutoLogin=$true
+
+
+### Basic config, reboot if necessary
+Update-ExecutionPolicy Unrestricted
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-TaskbarOptions -Size small -Combine Never
-
-
-Disable-BingSearch
 Enable-RemoteDesktop
+Disable-InternetExplorerESC
+Disable-UAC
 Enable-MicrosoftUpdate
+
+
+### Update, reboot if necessary
 Install-WindowsUpdate
+if (Test-PendingRebott) { Invoke-Reboot }
 
 
-cinst googlechrome
-cinst firefox
-
+### Utils
 cinst dropbox
 cinst babun
 cinst synergy
 cinst rainmeter
+cinst steam
+#cinst flux
 
+### Web
+cinst googlechrome
+cinst firefox
+
+
+# Dev
 cinst atom
 cinst sikulix
-cinst virtualbox
-cinst vagrant
-cinst packer
-cinst docker
-cinst fiddler
-
-cinst nodejs
+cinst fiddler4
 cinst jdk
-cinst golang
+cinst nodejs
+cinst virtualbox
+#cinst vagrant
+#cinst docker
+#cinst packer
+
+# TaskBar
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Mozilla Firefox\firefox.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Oracle\VirtualBox.exe"
+
+TaskbarInstall-ChocolateyPinnedTaskBarItem "$($env.userProfile)\.babun\cygwin\bin\mintty.exe"
+
+
 
