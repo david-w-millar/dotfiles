@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Go Modules
+#
+
+go get github.com/rakyll/boom
+

@@ -12,8 +12,6 @@
   helper = osxkeychain
 [github]
   user = david-w-millar
-[hub]
-  protocol = https
 [push]
   default = simple
 [filter "media"]

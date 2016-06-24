@@ -33,7 +33,7 @@ nnoremap <F3> :NumbersToggle<CR>
 au BufNewFile,BufRead *.gradle setf groovy
 
 
-"""""""""" spf13 config """"""""""
+" spf13 config
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
 set background=dark
 

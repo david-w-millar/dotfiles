@@ -4,8 +4,6 @@ Bundle 'vimwiki'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'sukima/asciidoc-vim'
 Bundle 'tfnico/vim-gradle'
-
-" Code Completion
 Bundle 'Valloric/YouCompleteMe'
 
 "Bundle 'ShowMarks'

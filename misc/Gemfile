@@ -5,7 +5,7 @@
 
 sudo -v
 
-#gem install vagrant-wrapper
 sudo gem install teamocil
+sudo gem install fpm
 
 

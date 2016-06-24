@@ -8,7 +8,7 @@ zstyle ':omz:module:tmux' auto-start 'yes'
 if [ "$TMUX" = "" ]; then tmux -2; fi
 
 # plugins
-plugins=(tmux git github gitignore git-flow mvn ruby gem bundler vagrant gradle grails rails rake sbt scala python rvm ssh-agent vundle colored-man gnu-utils bower brew brew-cask cp docker node npm)
+plugins=(aws tmux git github gitignore git-flow mvn ruby gem bundler vagrant gradle grails rails rake sbt scala python rvm ssh-agent vundle colored-man gnu-utils bower brew brew-cask cp docker node npm web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,16 +20,20 @@ export EDITOR="vim"
 . ~/.zsh/config
 . ~/.zsh/aliases
 . ~/.secrets
+#. ~/.aws/cred_env
 
 export PATH="$PATH:$HOME/bin"
 
 # system specific config
 [[ -f ~/.localrc ]] && . ~/.localrc
-export PATH=$JAVA_HOME/bin:$PATH
+
+#export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin"
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/go/bin:$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/go/bin" # Add RVM to PATH for scripting
@@ -38,4 +42,6 @@ export GOPATH=$HOME/go
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/dave/.sdkman"
 [[ -s "/Users/dave/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dave/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
