@@ -44,7 +44,7 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Mozilla Firefox
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Oracle\VirtualBox.exe"
 
-TaskbarInstall-ChocolateyPinnedTaskBarItem "$($env.userProfile)\.babun\cygwin\bin\mintty.exe"
+Install-ChocolateyPinnedTaskBarItem "$($env.userProfile)\.babun\cygwin\bin\mintty.exe"
 
 
 
