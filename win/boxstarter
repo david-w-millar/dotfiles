@@ -42,7 +42,7 @@ cinst virtualbox
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
 
-Install-ChocolateyPinnedTaskBarItem "$env:userProfile\.babun\cygwin\bin\mintty.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:UserProfile\.babun\cygwin\bin\mintty.exe"
 
 
 
