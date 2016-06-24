@@ -9,13 +9,8 @@ Update-ExecutionPolicy Unrestricted
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-TaskbarOptions -Size small -Combine Never
 Enable-RemoteDesktop
-Disable-InternetExplorerESC
 Enable-MicrosoftUpdate
-
-
-### Update, reboot if necessary
 Install-WindowsUpdate
-if (Test-PendingRebott) { Invoke-Reboot }
 
 
 ### Utils
@@ -25,6 +20,7 @@ cinst synergy
 cinst rainmeter
 cinst steam
 #cinst flux
+
 
 ### Web
 cinst googlechrome
