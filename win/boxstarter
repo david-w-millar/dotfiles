@@ -37,9 +37,8 @@ cinst virtualbox
 #cinst docker
 #cinst packer
 
-# TaskBar
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
-
-Install-ChocolateyPinnedTaskBarItem "$env:UserProfile\.babun\babun.bat"
+# TaskBar - this seems to be busted for some reason - DWM 2016.06.24
+#Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
+#Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Steam\Steam.exe"
+#Install-ChocolateyPinnedTaskBarItem "$env:UserProfile\.babun\babun.bat"
 
