@@ -5,7 +5,7 @@ Bundle 'vim-scripts/nginx.vim'
 
 " Language Integrations
 Bundle 'sukima/asciidoc-vim'
-Bundle 'puppetlabs/puppet-syntax-vim'
+"Bundle 'puppetlabs/puppet-syntax-vim'
 
 " Arduino
 "Bundle 'sudar/vim-arduino-syntax'
