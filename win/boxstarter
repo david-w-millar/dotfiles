@@ -1,0 +1,30 @@
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableOpenFileExplorerToQuickAccess
+Set-TaskbarOptions -Size small -Combine Never
+
+
+Disable-BingSearch
+Enable-RemoteDesktop
+Enable-MicrosoftUpdate
+Install-WindowsUpdate
+
+
+cinst googlechrome
+cinst firefox
+
+cinst dropbox
+cinst babun
+cinst synergy
+cinst rainmeter
+
+cinst atom
+cinst sikulix
+cinst virtualbox
+cinst vagrant
+cinst packer
+cinst docker
+cinst fiddler
+
+cinst nodejs
+cinst jdk
+cinst golang
+
