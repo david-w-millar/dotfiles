@@ -1,5 +1,4 @@
-= dotfiles
-David W Millar <david.w.millar@gmail.com>
+# Dotfiles
 
-My dotfiles and other environment configs
+My dotfiles - work in progress - undergoing some serious reworking
 

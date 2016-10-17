@@ -1,9 +1,8 @@
 [user]
-  email = d.millar@elsevier.com
+  email = david.w.millar@gmail.com
   name = David W Millar
 [core]
   editor = vim
-  excludesfile = /Users/millard/.gitignore_global
 [color]
   ui = true
 [alias]
@@ -17,3 +16,4 @@
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
+
