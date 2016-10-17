@@ -28,6 +28,11 @@ intall_deps() {
 }
 
 
+### System wide packages
+
+
+
+
 ### User Config
 
 misc_dot_config() {
