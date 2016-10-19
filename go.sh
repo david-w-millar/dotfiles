@@ -3,6 +3,12 @@
 # Configure linux environment
 #
 
+
+### Config
+
+NEW_USER_NAME=dave
+
+
 ### Utilities
 
 BOLD=$(tput bold)
@@ -17,25 +23,79 @@ warning() { echo -e "${YELLOW}WARNING: ${NORMAL} $*"; }
 info() {    echo -e "${GREEN}INFO:    ${NORMAL} $*"; }
 
 link_dotfile() {
-  [ -e "${HOME}/$1" ] && mv "${HOME}/$1" "${HOME}/${1}-$(date +%s)"
   ln -s "$(pwd)/home/$1" "${HOME}/$1";
 }
 
 
-### Deps
-intall_deps() {
-  apt-get install -y curl git zsh tmux xclip tmux tmuxinator
+
+### System Config
+
+configure_sudoers() {
+  info "Configuring Sudoers"
+  echo "%sudo   ALL= NOPASSWD: ALL" > /etc/sudoers.d/sudo
 }
 
+configure_apt() {
+  info "Configuring Apt"
+  sudo apt-get install -y apt-transport-https ca-certificates
+  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+  echo "deb https://apt.dockerproject.org/repo debian-stretch main" > /etc/apt/sources.list.d/docker.list
+  sudo apt-get update
+}
+
+install_deps() {
+  info "Installing script dependencies"
+  apt-get install -y curl git zsh tmux xclip tmux tmuxinator vim sudo
+}
 
 ### System wide packages
 
+useful_packages() {
+  info "Installing useful packages"
+  apt-get install -y silversearcher-ag thefuck unoconv urlscan urlview
+  apt-get install -y surfraw surfraw-extras
+
+  # da fuq? docker / docker.io not available?
+  #apt-get install -y docker.io
+
+  apt-get install -y docker-compse docker-registry ctop sen packer vagrant ansible
+
+  apt-get install -y fruitywifi
+  apt-get install -y android-sdk
+  apt-get install -y gpsd gpsd-clients sqlite3 sqlitebrowser
+  apt-get install -y sqlite3
+
+  apt-get install -y xvfb
+  apt-get install -y vlc
+  apt-get install -y transmission transmission-cli
+}
+
+docker_config() {
+  info "Configuring Docker"
+  apt-get install -y docker-engine
+  service docker start
+  service docker restart
+  systemctl enable docker
+}
+
+config_skel() {
+  cp -R . "/etc/skel/.dotfiles"
+}
+
+add_user() {
+  info "Creating user ${NEW_USER_NAME}"
+  adduser --shell /usr/bin/zsh --disabled-login --gecos '' ${NEW_USER_NAME} 
+  adduser ${NEW_USER_NAME} sudo
+  adduser ${NEW_USER_NAME} docker
+  warning "You will need to change the password manually for ${NEW_USER_NAME}"
+}
 
 
 
-### User Config
+### Current User Config
 
 misc_dot_config() {
+  info "Configuring Misc Dotfiles"
   link_dotfile ".gemrc"
   link_dotfile ".gitconfig"
 }
@@ -72,25 +132,29 @@ vim_config() {
 }
 
 
-### System Config
-
-
-
-
 ### Main
 
-main() {
-  # Deps
+system_config() {
+  configure_sudoers
+  configure_apt
   install_deps
+  useful_packages
+  docker_config
+  config_skel
+  add_user
+}
 
-  # System Config
-
-  # User Config
+current_user_config() {
   caps_lock_config
   zsh_config
   tmux_config
   vim_config
+  misc_dot_config
+}
 
+main() {
+  [[ $EUID -eq 0 ]] && system_config
+  current_user_config
 }
 
 main

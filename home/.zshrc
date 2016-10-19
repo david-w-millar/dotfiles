@@ -21,11 +21,12 @@ COMPLETION_WAITING_DOTS="true"
 
 
 # Plugin Config
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOSTART_ONCE=true
-ZSH_TMUX_AUTOCONNECT=true
-ZSH_TMUX_AUTOQUIT=${ZSH_TMUX_AUTOSTART}
-ZSH_TMUX_FIXTERM=true
+ZSH_TMUX_AUTOSTART=true       # Default: false
+ZSH_TMUX_AUTOSTART_ONCE=true  # Default: true
+ZSH_TMUX_AUTOCONNECT=false    # Default: true
+ZSH_TMUX_AUTOQUIT=false       # Default: ZSH_TMUX_AUTOQUIT=${ZSH_TMUX_AUTOSTART}
+ZSH_TMUX_FIXTERM=true         # Default: true
+
 
 
 # Plugins
