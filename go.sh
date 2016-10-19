@@ -68,6 +68,8 @@ useful_packages() {
   apt-get install -y xvfb
   apt-get install -y vlc
   apt-get install -y transmission transmission-cli
+
+  apt-get install -y alsa-utils
 }
 
 docker_config() {
