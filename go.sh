@@ -52,8 +52,12 @@ install_deps() {
 
 useful_packages() {
   info "Installing useful packages"
-  apt-get install -y silversearcher-ag thefuck unoconv urlscan urlview
+  apt-get install -y silversearcher-ag thefuck unoconv urlscan urlview stterm graphviz
+  apt-get install -y pv progress
   apt-get install -y surfraw surfraw-extras
+  apt-get install -y apt-file
+
+  apt-get install -y lsscsi parted
 
   # da fuq? docker / docker.io not available?
   #apt-get install -y docker.io
@@ -65,11 +69,15 @@ useful_packages() {
   apt-get install -y gpsd gpsd-clients sqlite3 sqlitebrowser
   apt-get install -y sqlite3
 
-  apt-get install -y xvfb
+  apt-get install -y xvfb xinit
   apt-get install -y vlc
   apt-get install -y transmission transmission-cli
 
   apt-get install -y alsa-utils
+
+  apt-get install -y suckless-tools dwm
+
+  apt-get install -y chromium lastpass-cli
 }
 
 docker_config() {
@@ -89,6 +97,8 @@ add_user() {
   adduser --shell /usr/bin/zsh --disabled-login --gecos '' ${NEW_USER_NAME} 
   adduser ${NEW_USER_NAME} sudo
   adduser ${NEW_USER_NAME} docker
+  adduser ${NEW_USER_NAME} audio
+  adduser ${NEW_USER_NAME} xpra
   warning "You will need to change the password manually for ${NEW_USER_NAME}"
 }
 
